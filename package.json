@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "node --max-old-space-size=4096 vite.config.js"
+    "start": "node --max-old-space-size=8192 vite.config.js"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
