@@ -1,0 +1,22 @@
+.btn_login {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px 20px;
+    color: #2148C0;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase; 
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+    transition: all 350ms;
+
+    &:hover {
+        background:#2148C0;
+        color: white;
+        transition: all 350ms;
+    }
+}

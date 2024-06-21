@@ -1,0 +1,317 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #000478;
+    z-index: 99;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: #000478;
+}
+
+.list__navigation {
+    position: relative;
+    display: flex;
+    column-gap: 24px;
+    font-weight: 500;
+    margin-left: 100px;
+}
+
+.burder_block {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.list__item p {
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        transform: translateY(3px);
+        left: 0;
+        width: 0px;
+        height: 2px;
+        background-color: #F14D29;
+        transition: all 350ms;
+    }
+    &:hover {   
+        &::before {
+            width: 100%;
+            transition: all 350ms;
+        }
+    }
+}
+
+.buttons_block {
+    display: flex;
+    column-gap: 10px;
+    margin-left: auto;
+}
+
+
+.user_nav{
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.user_list {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+
+.list_item {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+    cursor: pointer;
+    
+    img {
+        width: 18px;
+    }
+}
+
+.admin__btn {
+    width: fit-content;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    border: 0;
+    color: inherit;
+    line-height: normal;
+    border-radius: 8px;
+    background-color: rgb(247, 25, 25);
+    transition: all 150ms;
+    padding: 8px 20px;
+
+    &:hover { 
+        transition: all 150ms;
+        background-color: rgb(248, 53, 53);
+    }
+
+    &:active {   
+        background-color: rgb(213, 46, 8);
+        transition: all 200ms;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    }
+}
+
+.popover__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+    background-color: rgb(248, 38, 38);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    transition: all 250ms;
+
+    &:hover {
+        background-color: rgb(250, 52, 52);
+        transition: all 250ms;
+    }
+
+    &:active {
+        background-color: rgb(252, 29, 29);
+        transition: all 250ms;
+    }
+}
+
+
+.header__burger {
+    display: none;
+    width: 40px;
+    height: 41px;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+
+.span {
+    height: 1.5px;
+    width: 35px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    transition:  all 250ms;
+    top: 20px;
+    left: 0;
+}
+
+.span_open {
+    @extend .span;
+    width: 25px;
+    transition:  all 250ms;
+}
+
+.span::before {
+    left: 0px;
+    position: absolute;
+    top: -8px;
+    height: 1.5px;
+    width: 35px;
+    background-color: white;
+    content: "";
+    border-radius: 20px;
+    transition:  all 250ms;
+    transition: transform 0.25s, top 0.25s 0.25s;
+}
+
+.span::after {
+    left: 0px;
+    position: absolute;
+    top: 8px;
+    height: 1.5px;
+    width: 35px;
+    background-color: white;
+    content: "";
+    border-radius: 20px;
+    transition:  all 250ms;
+    transition: transform 0.25s, top 0.25s 0.25s;
+}
+
+
+@media (max-width: 1100px) {
+    .list__navigation {
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .list__navigation {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .user_nav {
+        p {
+            display: none;
+        }
+    }
+    .list_item img {
+        width: 20px;
+    }
+    .list__navigation {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .list__navigation {
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 790px) {
+    .list__item p {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 875px) {
+    .navigation{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        background-color: rgb(0, 3, 103);
+        transition: all 250ms;
+        margin: 0;
+        z-index: -1;
+        overflow: hidden;
+    }
+    .navigation_active {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        background-color: rgb(0, 3, 103);
+        transition: all 250ms;
+        margin: 0;
+        z-index: -1;
+        top: 70px;
+        overflow: hidden;
+    }
+    .list__navigation {
+        display: flex;
+        column-gap: 60px;
+        margin: 0 auto;
+    }
+    .list__item p {
+        font-size: 15px;
+    }
+    .header__burger {
+        display: flex;
+    }
+}
+
+@media (max-width: 580px) {
+    .list__navigation {
+        column-gap: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .list__navigation {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .navigation_active {
+        height: 100vh;
+        align-items: flex-start;
+        background-color: rgba(0, 4, 120, 0.92);
+    }
+    .list__navigation {
+        flex-direction: column;
+        row-gap: 40px;
+        padding-top: 100px;
+    }
+    .list__item p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 360px) {
+    .user_list{
+        column-gap: 15px;
+    }
+}
+

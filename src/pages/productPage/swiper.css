@@ -1,0 +1,30 @@
+.mySwiper-product .swiper {
+    padding: 0px 10px !important;
+}
+
+.mySwiper-product .swiper-wrapper {
+    height: 100px !important;
+}
+
+.mySwiper-product .swiper-slide {
+    justify-content: flex-start!important;
+    display: flex !important;
+    align-items: center;
+    box-shadow: none !important;
+}
+
+.mySwiper_page .swiper-slide {
+    display: flex !important;
+    justify-content: flex-start!important;
+}
+
+.tabs .ant-tabs-tab-btn {
+    font-size: 16px !important;
+}
+
+.mySwiper_page .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+        margin: 0 7px !important;
+        background-color: white !important;
+}

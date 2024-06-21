@@ -1,0 +1,132 @@
+.main__type_block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 35px 20px;
+    border-radius: 8px;
+    background-color: rgb(1, 6, 153);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.088);
+}
+
+
+.main__type_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: balance;
+    font-size: 15px;
+    min-height: 32px;
+    
+}
+
+.main__type_price {
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-bottom: 35px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.main__type_button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 11px 10px;
+    border-radius: 0px 0px 10px 10px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #1eae3e;
+    color: white;
+    transition: all 250ms;
+    
+    &:hover {
+        background-color: #20b640;
+        transition: all 250ms;
+    }
+}
+
+.bar_block {
+    width: 100%;
+    max-width: 275px;
+}
+
+.instock__product {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 10px;
+
+    p {
+        margin-bottom: -8px;
+    }
+}
+
+.main__type_button_del {
+    @extend .main__type_button;
+    background-color: #d93c2e;
+    transition: all 250ms;
+
+    &:hover {
+        background-color: #d93c2e;
+        transition: all 250ms;
+    }
+}
+
+.main__type_image {
+    max-width: 115px;
+    height: 115px;
+    margin-bottom: auto;
+
+    img {
+        width: 98%;
+        height: 98%;
+        object-fit: contain;
+    }
+}
+
+.counter__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1eae3e; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 6px 30px;
+    border: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    transition: background-color 250ms;
+
+    &:hover {
+        background-color: #20b640;
+    }
+
+}
+
+
+.counter__image {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.counter__count {
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+.counter__info {
+    display: flex;
+    flex-direction: column;
+}

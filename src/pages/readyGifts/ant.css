@@ -1,0 +1,25 @@
+.ant-pagination {
+    background-color: white;
+    padding: 5px 20px !important;
+    border-radius: 10px;
+}
+
+.ant-select-selector {
+    border-radius: 36px !important;
+    padding: 15px 20px !important;
+    border: 1px solid #FFFFFF !important;
+    background: transparent !important;
+}
+
+.ant-select-item {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ant-select-selection-item {
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ant-select-arrow {
+    color: white !important;;
+}

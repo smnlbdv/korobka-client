@@ -1,0 +1,18 @@
+.button__review {
+    width: 200px;
+    border: 0;
+    background-color:rgb(52, 59, 253);
+    margin-left: auto;
+    color: #FFF;
+    border-radius: 0px 0px 10px 10px;
+
+    a {
+        display: block;
+        padding: 6px 30px;
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.counter__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 13px;
+    max-width: 105px;
+}
+
+.btn_counter {
+    display: contents;
+    border: 0;
+    background-color: transparent;
+}
+.counter_icon {
+    width: 24px;
+}
+
+.count_input {
+    display: inline-block; 
+    text-align: center;
+    color: #606060;
+    border: 0px;
+    border-radius: 2px;
+    width: 100%;
+}
+.count {
+    text-align: center; 
+    color: #606060;
+    min-width: 10px;
+}

@@ -1,0 +1,38 @@
+.block__navigation {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 40px;
+    padding: 20px 20px;
+    width: 200px;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 20, 159);
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-top: 30px;
+
+        li {
+            cursor: pointer;
+            font-size: 15px;
+        }
+    }
+}
+
+.title__panel {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.lowtitle__panel {
+    font-size: 13px;
+    text-align: center;
+    margin-top: auto;
+}

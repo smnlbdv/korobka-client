@@ -1,0 +1,22 @@
+.button_login {
+    font-size: 14px;
+    background-color: rgb(248, 35, 35);
+    border-radius: 8px;
+    color: white;
+    font-weight: 500; 
+    border: 0;
+    padding: 12px 20px;
+    transition: all 250ms;
+    cursor: pointer;
+
+    &:hover {   
+        background-color: rgb(248, 53, 53);
+        transition: all 250ms;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.09);
+    }
+
+    &:active {   
+        background-color: #fe3f14;
+        transition: all 250ms;
+    }
+}

@@ -1,0 +1,154 @@
+
+.inner_swiper_style {
+    position: absolute;
+    bottom: 0px;
+    width: 375px !important;
+    height: 135px !important;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .swiper-wrapper {
+        width: initial !important;
+    }
+
+    .swiper-button-next::after {
+        content: '';
+        width: 40px;
+        height: 40px;
+        background-image: url('./assets/swiper-line.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 180px !important;
+        z-index: 900;
+        right: 0;
+        top: 69%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        right: 35%;
+    }
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        left: 50%;
+        position: absolute;
+        bottom: 18px;
+        left: 0px;
+        top: 69%;
+        transform: scale(-1, 1);
+        z-index: 900;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        left: 35%;
+    }
+
+    .swiper-button-prev::after {
+        content: '';
+        width: 40px;
+        height: 40px;
+        background-image: url('./assets/swiper-line.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.mySwiper-constructor {
+
+    .swiper-pagination-bullets {
+        left: 0px !important;
+    }
+    
+    .swiper-wrapper {
+        width: calc(100% - 70px);
+        margin-left: auto;
+    }
+    
+    .swiper-pagination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        row-gap: 20px !important;
+        
+    }
+    
+    .swiper-pagination-bullet {
+        margin: 0 !important;
+        padding: 0;
+        width: 62px;
+        height: 62px;
+        border-radius: 15px !important;
+        background-image: url(../assets/dropbox.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 45%;
+    }
+    
+    .swiper-pagination-bullet:nth-child(2) {
+        background-image: url(../assets/style.svg);
+        animation: blinkBackground 1s;
+    }
+    
+    .swiper-pagination-bullet:nth-child(3) {
+        background-image: url(../assets/shopping-cart.svg);
+    }
+    
+    .swiper-pagination-bullet:nth-child(4) {
+        background-image: url(../assets/book.svg);
+    }
+    
+    .swiper-pagination-bullet:nth-child(5) {
+        background-image: url(../assets/receipt-text.svg);
+    }
+}
+
+.ant-color-picker-trigger {
+    position: absolute !important;
+    bottom: 15% !important;
+    left: 28% !important;
+}
+
+
+@keyframes blinkBackground {
+    0% { transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% { transform: scale(1); }
+}
+
+.mySwiper-constructor-style {
+
+    @extend .mySwiper-constructor;
+
+    .swiper-pagination-bullet:nth-child(2) {
+        background-image: url(../assets/shopping-cart.svg);
+        animation: none;
+    }
+    
+    .swiper-pagination-bullet:nth-child(3) {
+        background-image: url(../assets/book.svg);
+    }
+    
+    .swiper-pagination-bullet:nth-child(4) {
+        background-image: url(../assets/receipt-text.svg);
+    }
+
+}

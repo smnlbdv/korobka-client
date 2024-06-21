@@ -1,0 +1,24 @@
+.button__add_favorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50px;
+    cursor: pointer;
+    height: 100%;
+    flex: 1;
+    border-radius: 0px 0px 10px 0px;
+    background-color: rgb(235, 43, 169);
+    transition: all 200ms;
+    &_love {
+        @extend .button__add_favorite;
+        background-color:white;
+        transition: all 200ms;
+        box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.favorite {
+    width: 18px;
+    cursor: pointer;
+    transition: all 200ms;
+}

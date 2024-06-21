@@ -1,0 +1,6 @@
+
+@media (max-width: 420px) {
+    .ant-dropdown {
+        inset: 250px 38.1px auto auto !important;
+    }
+}

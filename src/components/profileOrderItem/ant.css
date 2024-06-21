@@ -1,0 +1,9 @@
+.ant-tooltip-arrow {
+    bottom: -2px !important;
+}
+
+.ant-tooltip-inner {
+    font-family: "Monstserat", sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 13px !important;
+}

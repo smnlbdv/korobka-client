@@ -1,0 +1,21 @@
+
+.profile-page .ant-tabs-tab-btn {
+    font-size: 15px !important;
+}
+
+.profile-ant .ant-modal-content {
+    padding: 30px !important;
+}
+
+.profile-ant.constructor .ant-modal-body {
+    padding: 0 !important;
+    padding-top: 10px !important;
+}
+
+.profile-ant  .ant-modal-body {
+    padding: 10px 10px 0 10px !important;
+}
+
+.profile-ant  .ant-modal-title {
+    font-size: 20px !important;
+}

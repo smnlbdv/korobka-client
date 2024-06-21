@@ -1,0 +1,9 @@
+.ant-modal-body {
+    padding: 0 !important;
+}
+
+.ant-modal-content {
+    padding: 30px !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+

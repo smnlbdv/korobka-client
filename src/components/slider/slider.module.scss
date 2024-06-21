@@ -1,0 +1,20 @@
+.block__slider {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 100;
+    top: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.597); 
+}
+
+.block__inputs {
+    display: flex;
+    justify-content: space-around;
+}

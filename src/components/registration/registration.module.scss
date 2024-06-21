@@ -1,0 +1,29 @@
+
+.block_reg {
+    max-width: 332px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 40px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 15px;
+    row-gap: 5px;
+    &__item {
+        display: flex;
+        column-gap: 7px;
+    }
+    &__link {
+        color: #3d66fd;
+        font-weight: 500;
+    }
+}
