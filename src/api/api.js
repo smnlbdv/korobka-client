@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   withCredentials: true,
-  baseURL: "http://server.korobkabel.site",
+  baseURL: "http://server.korobka-grodno.site",
   headers: {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
