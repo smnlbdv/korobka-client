@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AdminContext } from "../../context/adminContext";
 import {XYPlot, VerticalBarSeries, XAxis, YAxis, VerticalGridLines, HorizontalGridLines} from 'react-vis';
-import 'react-vis/dist/style.css';
+
 import { Tabs, Select } from "antd";
 import * as Yup from "yup";
 import { AuthContext } from "../../context/authContext.js";
